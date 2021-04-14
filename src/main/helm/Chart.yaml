@@ -1,0 +1,18 @@
+apiVersion: v2
+name: ${project.artifactId}
+version: ${project.version}
+appVersion: ${project.version}
+description: Library quarkus bff
+keywords:
+  - library quarkus bff
+sources:
+  - https://gitlab.com/1000kit/apps/my-thai-star/booking-mgmt-bff
+maintainers:
+  - name: Tkit Developer
+    email: tkit_dev@1000kit.org
+dependencies:
+  # https://gitlab.com/1000kit/infra/helm/quarkus.git
+  - name: quarkus
+    version: ^1
+    repository: alias:1000kit
+    alias: app
